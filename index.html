@@ -9,8 +9,7 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
   <script src="bootstrap/jquery.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="bootstrap/bootstrap.min.js"></script>
   <!-- Bootstrap drugi nacin -->
@@ -27,37 +26,63 @@
 <body>
   <div class="request">
     <header>
-      <h6>New York State</h4>
-      <h5>Request for Contact</h1>
+      <div id="myProgressBarContainer" class="myProgressBar-grid">
+        <div class="myProgressBar"></div>
+      </div>
+      <div class="naslov-grid">
+        <h2>New York State</h4>
+          <h1>Request for Contact</h1>
+      </div>
     </header>
 
     <div class="form">
       <form action="#">
-          
-              
-        <label for="first-name">First Name</label> <br>
-        <input type="text" name="first-name" id="first-name" required> <br>
 
-        <label for="last-name">Last Name</label> <br>
-        <input type="text" name="last-name" id="last-name" required> <br>
+        <div class="polje">
+          <div class="progresTaskNumberContainer">
+            <span class="progresTaskNumber">1</span>
+          </div>
+          <input class="load" type="text" name="first-name" id="first-name" required>
+          <label for="first-name">First Name</label>
+        </div>
 
-        <label for="email">Email Address</label> <br>
-        <input type="text" name="email" id="email" required> <br>
+        <div class="polje">
+          <div class="progresTaskNumberContainer2">
+            <span>2</span>
+          </div>
+          <label for="last-name">Last Name</label> <br>
+          <input class="load2" type="text" name="last-name" id="last-name" required> <br>
+        </div>
+
+        <div class="polje">
+          <div class="progresTaskNumberContainer3">
+            <span>3</span>
+          </div>
+          <label for="email">Email Address</label> <br>
+          <input class="load3" type="email" name="email" id="email" required> <br>
+        </div>
 
 
-        <p>What is the best time to contact you?</p>
-        <input type="radio" name="contact" id="contact-monday" value="Monday">
-        <label for="contact-monday">Monday 3pm</label> <br>
+        <div class="polje">
+          <div class="progresTaskNumberContainer4">
+            <span class="zadnji-polje">4</span>
+          </div>
+          <p>What is the best time to contact you?</p>
+        </div>
+        <div class="radio-btn">
+          <input class="load4 contact-monday" type="radio" name="contact" id="contact-monday" value="Monday">
+          <label for="contact-monday">Monday 3pm</label> <br>
 
-        <input type="radio" name="contact" id="contact-tuesday" value="Tuesday">
-        <label for="contact-tuesday">Tuesday 3pm</label> <br>
+          <input class="load5 contact-tuesday" type="radio" name="contact" id="contact-tuesday" value="Tuesday">
+          <label for="contact-tuesday">Tuesday 3pm</label> <br></div>
 
         <div class="submit-button">
-        	<button >Submit request</button>
+          <button type="submit" class="btn btn-primary ">Submit request</button>
         </div>
       </form>
     </div>
   </div>
+  <script src="https://cdn.alloyui.com/1.0.3/aui/aui-min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

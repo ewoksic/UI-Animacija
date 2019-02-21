@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 60px 0;
+    font-weight: 320;
+    background: linear-gradient(to bottom, #3c7eab, #308da5) ;
+    font-size: 14px;
+}
+header{
+    display: grid;
+    padding: 15px;
+    background-color:  #2196f3;
+}
+
+h1{
+    color:#fafafd;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+h2{
+    margin-bottom: 1px;
+    color:#fafafd;
+    font-size: 25px;
+
+}
+.myProgressBar-grid{
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    
+}
+.myProgressBar{
+    display: inline-block;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .3);
+    /* color: #39a4f5; */
+    /* background: #69000085; */
+    border-radius: 100%;
+    width: 50px;
+    height: 30px;
+    font-size: 9px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 34px;
+    margin-left: 10px;
+    margin-top:20px; 
+}
+.naslov-grid{
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+.request{
+    max-width: 370px;
+    margin: 0 auto;
+    text-align: left;
+}
+.form{
+    background-color:rgb(232, 240, 254);
+}
+.polje{
+    display: grid;
+    padding-top: 25px;
+    padding-left: 10px;
+    
+}
+input[type=text], input[type=email]{
+    width: 90%;
+    padding: 1px ;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #dcdcdc;
+    background-color: rgb(232, 240, 254);
+    grid-column: 2 / span 3;
+    grid-row: 2;
+}
+  input:focus{
+    outline: none;
+}
+  p{
+      margin-top: 20px;
+      margin-left: 24px;
+    grid-column: 2 / span 3;
+    grid-row: 1;
+
+  }
+
+.submit-button{
+    text-align: center;
+    padding: 15px;
+}
+
+span{
+    
+        display: inline-block;
+        box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .3);
+        color: #39a4f5;
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+        text-align: center;
+        line-height: 34px;
+        margin-left: 10px;
+        margin-top:20px; 
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    
+}
+.zadnji-polje{
+    margin-top:15px;
+
+}
+.radio-btn{
+    margin-left: 90px;
+    margin-top: 25px;
+}
+/* animacija rednih brojeva*/
+
+.animation-border {
+    /* position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    background: transparent;
+    border-top: 1px solid #39a4f5;
+    border-right: 1px solid #39a4f5;
+    border-radius: 50%;
+    animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animation-styles {
+    /* background-color: #39a4f5; */
+    color: #fff;
+}
